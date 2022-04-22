@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
         run:
-          working-directory: ./Frontend/Part1/
+          working-directory: ./Frontend/Project/
     strategy:
       matrix:
         node-version: [14.x]
@@ -27,7 +27,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: './Frontend/Part1/package-lock.json'
+        cache-dependency-path: './Frontend/Project/package-lock.json'
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
