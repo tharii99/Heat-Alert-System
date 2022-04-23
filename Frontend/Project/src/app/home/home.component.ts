@@ -1,19 +1,17 @@
-import { Component, OnInit } from '@angular/core'
+import { Component} from '@angular/core'
 
-// @Component({
+@Component({
   
-//   selector: 'app-home',
-//   templateUrl: './home.component.html',
-//   styleUrls: ['./home.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 
-// });
+});
 
-// @Injectable()
-export abstract class HomeComponent implements OnInit {
+
+export abstract class HomeComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-
-  }
+//   ngOnInit(): void {}
 }
